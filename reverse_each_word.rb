@@ -10,5 +10,6 @@
 # end
 
 def reverse_each_word(string)
-  string.split(" ").each { |e| string.collect(e.reverse)}
+  string = string.split(" ")
+  string.collect { |e| e.reverse}.join(" ")
 end
